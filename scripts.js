@@ -4,7 +4,7 @@ portfolio.skills = () => {
     $('.about button').on('click', function(){
         console.log(this.value);
         if (this.value === 'aboutMe') {
-            $('#aboutText').html("You might know me from a shadow I made on a wall in an episode of Smallville, or perhaps from a news article that put me on a list of people in Montreal. But in case you aren't an aficinado of Smallville photo-double work or don't keep clippings of small entertainment articles in the Montreal Gazette from 5 years ago, I'm comedian Scott Andrew Carter, who now knows how to make websites and applications! I'm a recent graduate of Juno College of Technology's Front end Web Development bootcamp and I'm looking to get started in this new creative field!")
+            $('#aboutText').html("You might know me from a shadow I made on a wall in an episode of Smallville, or perhaps from a news article that put me on a list of people in Montreal. But in case you aren't an aficinado of Smallville photo-double work or don't keep clippings of entertainment articles from the Montreal Gazette, I'm Scott Carter and I make websites and web-applications! I'm a recent graduate of Juno College of Technology's Front end Web Development bootcamp and I'm looking for my first job in the industry! Please hire me...")
         } else if (this.value === 'skills'){
             $('#aboutText').html('<div class="skillsBars"><p>HTML</p><div class="container"><div class="skills html">100%</div></div><p>CSS</p><div class="container"><div class="skills css">90%</div></div><p>JavaScript</p><div class="container"><div class="skills js">85%</div></div><p>React</p><div class="container"><div class="skills react">70%</div></div></div>');
             $('.aboutScott').html('');
