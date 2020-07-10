@@ -1,0 +1,185 @@
+@media (max-width: 1135px){
+
+    h1  {
+        font-size: 2.5rem;
+    }
+
+    .portfolio {
+        min-height: 100vh;
+    }
+    .topLinks {
+        flex-direction: column;
+        align-items: center;
+        .right {
+            order: 0;
+            
+        }
+        .left {
+            order: 2;
+        }
+    }
+
+    .topLinks div, .bottomLinks div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .topLinks div:last-of-type{
+        width: 100%;
+        a {
+            margin: 0 auto;
+        }
+    }
+    .bottomLinks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topLinks div, .bottomLinks div {
+        margin-bottom: 40px;
+    }
+
+    .services > div:last-of-type {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services div div {
+        margin: 50px 0px 50px 0px;
+        width: 50%;
+    }
+
+    .services div div:first-of-type {
+        margin-right: 0px;
+    }
+
+    .services div div:last-of-type {
+        margin-left: 0px;
+        margin-bottom: 100px;
+    }
+
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    .aboutContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutContainer > div {
+        width: 80%;
+    }
+
+    .aboutImg img {
+        margin: 50px auto 0px auto;
+        width: 100%;
+    }
+
+    .topLinks img, .bottomLinks img {
+        max-width: 366px;
+    }
+
+    .hiddenMenu {
+        width: 50%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .nav .showingNav {
+        display: none;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2rem;
+        span {
+            top: 50px;
+        }
+    }
+
+    .hero {
+        flex-direction: column;
+        min-height: 95vh;
+        button {
+            margin-bottom: 20px;
+        }
+    }
+
+    .hiddenMenu {
+        width: 70%;
+    }
+
+    .title{
+        width: 100%;
+        top: 50px;
+    }
+
+    .scott {
+        display: none;
+    }
+
+    .socialMedia {
+        margin-bottom: 40px;
+    }
+
+    .services div div {
+        width: 80%;
+        align-items: center;
+    }
+
+    .contact .top-form {
+        flex-direction: column;
+    }
+
+    input[type=text], input[type=email] {
+        width: 100%;
+    }
+
+    .dashed, .dashedSmaller {
+        display: none;
+    }
+
+    .aboutContainer .aboutButtons button {
+        margin: 0px 0px 20px 0px;
+        font-size: 13px;
+    }
+
+    .services h3 {
+        font-size: 1.5rem;
+    }
+
+    .aboutContainer div:first-of-type {
+        margin-right: 0px;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .contact form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .dashedCircle {
+        display: none;
+    }
+
+    .topLinks img, .bottomLinks img {
+        max-width: 266px;
+    }
+
+    .aboutContainer .aboutButtons button {
+        width: 60px;
+
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+}

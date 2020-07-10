@@ -342,12 +342,12 @@ ul {
   padding-top: 15px;
 }
 
-.nav nav {
+.nav .showingNav {
   width: 50%;
   padding-top: 15px;
 }
 
-.nav nav ul {
+.nav .showingNav ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -400,7 +400,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 90vh;
+  min-height: 90vh;
 }
 
 .hero h3 {
@@ -432,20 +432,72 @@ ul {
 }
 
 .scott, .title {
-  width: 50%;
+  width: calc(50% - 20px);
   height: 600px;
   position: relative;
   top: 100px;
 }
 
-.solidCircle {
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  right: -125px;
-  top: -125px;
-  border: 50px solid rgba(165, 28, 48, 0.6);
+.scott img, .title img {
+  width: 100%;
+  border: 5px solid #A51C30;
   border-radius: 50%;
+}
+
+.title {
+  margin-right: 40px;
+}
+
+.hiddenMenu {
+  display: none;
+  width: 30%;
+  background-color: #FCFAFF;
+  z-index: 10;
+  position: fixed;
+  height: 100vh;
+  border-right: 5px solid #A51C30;
+}
+
+.hiddenMenu nav {
+  position: relative;
+  top: 50px;
+  height: 100vh;
+}
+
+.hiddenMenu h2 {
+  padding-left: 50px;
+}
+
+.hiddenMenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hiddenMenu button {
+  font-size: 2rem;
+}
+
+.hiddenMenu .logoContainer {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  position: absolute;
+  bottom: 180px;
+  left: 250px;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  top: -30px;
+  right: 40px;
+  color: #A51C30;
+  font-size: 3rem;
+  margin: 0px;
 }
 
 .about {
@@ -667,10 +719,11 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 300px;
+  min-height: 280px;
 }
 
 .topLinks img, .bottomLinks img {
+  width: 100%;
   -webkit-box-shadow: 10px 15px 80px 10px rgba(165, 28, 48, 0.27);
   box-shadow: 10px 15px 80px 10px rgba(165, 28, 48, 0.27);
 }
@@ -898,4 +951,192 @@ footer div {
 footer .logo p {
   position: relative;
   top: 12px;
+}
+
+@media (max-width: 1135px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .portfolio {
+    min-height: 100vh;
+  }
+  .topLinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topLinks .right {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .topLinks .left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .topLinks div, .bottomLinks div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .topLinks div:last-of-type {
+    width: 100%;
+  }
+  .topLinks div:last-of-type a {
+    margin: 0 auto;
+  }
+  .bottomLinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .topLinks div, .bottomLinks div {
+    margin-bottom: 40px;
+  }
+  .services > div:last-of-type {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services div div {
+    margin: 50px 0px 50px 0px;
+    width: 50%;
+  }
+  .services div div:first-of-type {
+    margin-right: 0px;
+  }
+  .services div div:last-of-type {
+    margin-left: 0px;
+    margin-bottom: 100px;
+  }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutContainer > div {
+    width: 80%;
+  }
+  .aboutImg img {
+    margin: 50px auto 0px auto;
+    width: 100%;
+  }
+  .topLinks img, .bottomLinks img {
+    max-width: 366px;
+  }
+  .hiddenMenu {
+    width: 50%;
+  }
+  .hamburger {
+    display: block;
+  }
+  .nav .showingNav {
+    display: none;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h1 span {
+    top: 50px;
+  }
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 95vh;
+  }
+  .hero button {
+    margin-bottom: 20px;
+  }
+  .hiddenMenu {
+    width: 70%;
+  }
+  .title {
+    width: 100%;
+    top: 50px;
+  }
+  .scott {
+    display: none;
+  }
+  .socialMedia {
+    margin-bottom: 40px;
+  }
+  .services div div {
+    width: 80%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .top-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  input[type=text], input[type=email] {
+    width: 100%;
+  }
+  .dashed, .dashedSmaller {
+    display: none;
+  }
+  .aboutContainer .aboutButtons button {
+    margin: 0px 0px 20px 0px;
+    font-size: 13px;
+  }
+  .services h3 {
+    font-size: 1.5rem;
+  }
+  .aboutContainer div:first-of-type {
+    margin-right: 0px;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .contact form {
+    width: 100%;
+    padding: 15px;
+  }
+  .dashedCircle {
+    display: none;
+  }
+  .topLinks img, .bottomLinks img {
+    max-width: 266px;
+  }
+  .aboutContainer .aboutButtons button {
+    width: 60px;
+  }
+  footer p {
+    font-size: 10px;
+  }
 }

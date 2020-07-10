@@ -176,8 +176,9 @@
 
 .topLinks, .bottomLinks {
     display: flex;
-    height: 300px;
+    min-height: 280px;
     img {
+        width: 100%;
         -webkit-box-shadow: 10px 15px 80px 10px rgba($color:$firstColor, $alpha: .27);
         -moz-box-shadow: 10px 15px 80px 10px rgba($color:$firstColor, $alpha: .27);
         box-shadow: 10px 15px 80px 10px rgba($color:$firstColor, $alpha: .27);

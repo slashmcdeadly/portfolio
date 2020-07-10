@@ -5,7 +5,7 @@
         width: 50%;
         padding-top: 15px;
     }
-    nav {
+    .showingNav {
         width: 50%;
         padding-top: 15px;
         ul {
@@ -60,7 +60,7 @@
 
 .hero {
     display: flex;
-    height: 90vh;
+    min-height: 90vh;
     h3 {
         color: $firstColor;
         font-size: 2rem;
@@ -87,18 +87,62 @@
 }
 
 .scott, .title {
-    width: 50%;
+    width: calc(50% - 20px);
     height: 600px;
     position: relative;
     top: 100px;
+    img {
+        width: 100%;
+        border: 5px solid $firstColor;
+        border-radius: 50%;
+    }
 }
 
-.solidCircle {
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    right: -125px;
-    top: -125px;
-    border: 50px solid rgba($color:$firstColor, $alpha: .6);
-    border-radius: 50%;
+.title{
+    margin-right: 40px;
 }
+
+
+.hiddenMenu {
+    display: none;
+    width: 30%;
+    background-color: $backgroundColor;
+    z-index: 10;
+    position: fixed;
+    // left: -30%;
+    height: 100vh;
+    border-right: 5px solid $firstColor;
+    nav {
+        position: relative;
+        top: 50px;
+        height: 100vh;
+    }
+    h2 {
+        padding-left: 50px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    button {
+        font-size: 2rem;
+    }
+    .logoContainer {
+        transform: scale(3);
+        position: absolute;
+        bottom: 180px;
+        left: 250px;
+    }
+}
+
+.hamburger {
+    display: none;
+    position: absolute;
+    top: -30px;
+    right: 40px;
+    color: $firstColor;
+    font-size: 3rem;
+    margin: 0px;
+}
+
+

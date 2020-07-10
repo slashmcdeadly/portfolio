@@ -19,7 +19,32 @@
                     </a>
                 </div>
             </div>
-            <nav>
+            <div class="hamburger">
+                <p>
+                    <i class="fas fa-hamburger"></i>
+                </p> 
+            </div>
+            <div class="hiddenMenu">
+                <nav>
+                    <h2>Menu</h2>
+                    <ul>
+                        <li><button class="scroll" value="#home">Home</button></li>
+                        <li><button class="scroll" value="#about">About</button></li>
+                        <li><button class="scroll" value="#services">Services</button></li>
+                        <li><button class="scroll" value="#portfolio">Portfolio</button></li>
+                        <li><button class="scroll" value="#contact">Contact</button></li>
+                    </ul>
+                    <div class="logoContainer">
+                        <div class="logo">
+                            <a href="https://scottandrewcarter.com">
+                                <p>scott</p>
+                                <p>carter</p>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <nav class="showingNav">
                 <ul>
                     <li><button class="scroll" value="#home">Home</button></li>
                     <li><button class="scroll" value="#about">About</button></li>
@@ -31,7 +56,7 @@
         </section>
 
         <section class="hero" id="home">
-            <div class="solidCircle"></div>
+            <!-- <div class="solidCircle"></div> -->
             <div class="title">
                 <h3>hello</h3>
                 <h1>I'm <strong>Scott Carter</strong> <span>Web Developer</span></h1>
@@ -48,7 +73,7 @@
             </div>
 
             <div class="scott">
-                <img src="" alt="picture of Scott Carter">
+                <img src="./assets/scott.png" alt="picture of Scott Carter">
             </div>
         </section>
     </header>
@@ -94,7 +119,7 @@
         </section>
 
         <section class="services" id="services">
-            <div class="dashedCircle"></div>
+            <!-- <div class="dashedCircle"></div> -->
             <div class="sectionTitles wrapper">
                 <h4>Service</h4>
                 <h2>What I do?</h2>
@@ -102,17 +127,17 @@
             <div class="wrapper">
                 <div>
                     <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti in rem eum.</p>
+                    <p>I make websites using HTML, CSS, javascript, jQuery, React, and Firebase</p>
                     <button class="buttonWhite hireMe">HIRE ME!!!</button>
                 </div>
                 <div>
                     <h3>Photography and Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, minus!</p>
+                    <p>I can take pictures or film for you! I have a decent camera and know how to edit photos and video!</p>
                     <button class="buttonPurple hireMe">HIRE ME!!!</button>
                 </div>
                 <div>
                     <h3>Comedic Copywriting</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe expedita?</p>
+                    <p>Need some copy written? Bored of tired old copy? Do I even know what copy is? Find out by hiring me!</p>
                     <button class="buttonWhite hireMe">HIRE ME!!!</button>
                 </div>
             </div>
@@ -127,10 +152,10 @@
                     <h2>Latest Work</h2>
                 </div>
                 <div class="topLinks">
-                    <div>
+                    <div class="left">
                         <a href="https://slashmcdeadly.github.io/scottCarterProjectFive/"><img src="./assets/d&d.png" alt="picture of what's for dinner website"></a>
                     </div>
-                    <div>
+                    <div class="right">
                         <a href="https://whats-for-dinner-juno.github.io/teamFoodie/"><img src="./assets/whatsForDinner.png" alt="picture of d and d website"></a>
                     </div>
                 </div>
@@ -150,8 +175,8 @@
                 <h4>Contact</h4>
                 <h2>Get in Touch</h2>
             </div>
-            <div class="dashedCircle"></div>
-            <div class="dashedInner"></div>
+            <!-- <div class="dashedCircle"></div>
+            <div class="dashedInner"></div> -->
             <form action="https://formspree.io/mdowwldb" method="POST">
 
                 <div class="top-form">

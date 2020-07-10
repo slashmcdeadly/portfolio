@@ -38,11 +38,21 @@ portfolio.close = function(){
     })
 }
 
+portfolio.hamburger = () => {
+    $('.hamburger').on('click', function(){
+        $('.hiddenMenu').toggle('slow')
+    })
+    $('.hiddenMenu button').on('click', function(){
+        $('.hiddenMenu').toggle('slow')
+    })
+}
+
 portfolio.init = () => {
     portfolio.skills();
     portfolio.hireMe();
     portfolio.nav();
     portfolio.close();
+    portfolio.hamburger();
 }
 
 $(function(){
