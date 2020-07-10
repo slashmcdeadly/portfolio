@@ -352,6 +352,16 @@ ul {
       justify-content: space-around;
 }
 
+.solidCircle {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  right: -125px;
+  top: -125px;
+  border: 50px solid rgba(165, 28, 48, 0.6);
+  border-radius: 50%;
+}
+
 .logo {
   height: 43px;
   width: 43px;
