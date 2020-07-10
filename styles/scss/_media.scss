@@ -121,7 +121,12 @@
     }
 
     .scott {
-        display: none;
+        width: 70%;
+        top: 50px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
     }
 
     .socialMedia {
@@ -164,6 +169,10 @@
     .contact form {
         width: 100%;
         padding: 15px;
+    }
+
+    .scott {
+        top: 150px;
     }
 
     .dashedCircle {

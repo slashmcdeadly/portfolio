@@ -352,16 +352,6 @@ ul {
       justify-content: space-around;
 }
 
-.solidCircle {
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  right: -125px;
-  top: -125px;
-  border: 50px solid rgba(165, 28, 48, 0.6);
-  border-radius: 50%;
-}
-
 .logo {
   height: 43px;
   width: 43px;
@@ -443,7 +433,7 @@ ul {
 
 .scott, .title {
   width: calc(50% - 20px);
-  height: 600px;
+  max-height: 600px;
   position: relative;
   top: 100px;
 }
@@ -452,6 +442,10 @@ ul {
   width: 100%;
   border: 5px solid #A51C30;
   border-radius: 50%;
+}
+
+.scott {
+  min-height: 500px;
 }
 
 .title {
@@ -1096,7 +1090,12 @@ footer .logo p {
     top: 50px;
   }
   .scott {
-    display: none;
+    width: 70%;
+    top: 50px;
+    margin: 0 auto;
+  }
+  .scott img {
+    width: 100%;
   }
   .socialMedia {
     margin-bottom: 40px;
@@ -1136,6 +1135,9 @@ footer .logo p {
   .contact form {
     width: 100%;
     padding: 15px;
+  }
+  .scott {
+    top: 150px;
   }
   .dashedCircle {
     display: none;
