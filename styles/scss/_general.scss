@@ -1,0 +1,89 @@
+h1, h2, h3, h4, p, button, a {
+    font-family: $font;
+}
+
+body {
+    background-color: $backgroundColor;
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    position: relative;
+    bottom: 50px;
+    span {
+        position: absolute;
+        left: 0;
+        top: 80px;
+    }
+    strong {
+        color: $firstColor;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $firstColor;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+.buttonWhite {
+    width: 150px;
+    height: 50px;
+    border-radius: 3px;
+    margin-right: 50px;
+    color: $firstColor;
+    border: 2px solid $firstColor;
+    background-color: $backgroundColor;
+    transition: 0.5s all;
+    &:hover {
+        background-color: $firstColor;
+        color: $backgroundColor;
+        border: none;
+    }
+}
+
+.buttonPurple {
+    width: 150px;
+    height: 50px;
+    border-radius: 3px;
+    margin-right: 50px;
+    border: 0;
+    color: $backgroundColor;
+    background-color: $firstColor;
+    transition: 0.5s all;
+    &:hover {
+        color: $firstColor;
+        border: 2px solid $firstColor;
+        background-color: $backgroundColor;
+    }
+}
+
+.sectionTitles {
+    padding-top: 50px;
+    text-align: center;
+    h4 {
+        color: $firstColor;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,104 @@
+.nav {
+    height: 10vh;
+    display: flex;
+    .logoContainer {
+        width: 50%;
+        padding-top: 15px;
+    }
+    nav {
+        width: 50%;
+        padding-top: 15px;
+        ul {
+            justify-content: space-around;
+        }
+    }
+}
+
+.logo {
+    height: 43px;
+    width: 43px;
+    border: 2px solid #A51C30;
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(165,28,48,1);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(165,28,48,1);
+    box-shadow: 5px 5px 0px 0px rgba(165,28,48,1);
+}
+
+.logo a {
+    color: $darkColor;
+    width: 43px;
+    height: 43px;
+}
+
+.logo p {
+    font-size: 9px;
+    margin: 0;
+    text-transform: uppercase;
+    position: relative;
+    top: 9px;
+    left: 2px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    width: 100%;
+}
+.logo p:first-of-type {
+    letter-spacing: 1px;
+}
+
+.nav button {
+    color: $firstColor;
+    border: none;
+    padding: 5px 10px;
+    background-color: transparent;
+    transition: 1s all;
+}
+
+.nav button:hover {
+    -webkit-box-shadow: 0px 5px 60px 0px rgba($color:$firstColor, $alpha: .27);
+    -moz-box-shadow: 0px 5px 60px 0px rgba($color:$firstColor, $alpha: .27);
+    box-shadow: 0px 5px 60px 0px rgba($color:$firstColor, $alpha: .27);
+}
+
+.hero {
+    display: flex;
+    height: 90vh;
+    h3 {
+        color: $firstColor;
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+    p {
+        padding: 20px 0px 40px 0px;
+        font-size: 1rem;
+        color: $secondColor;
+        line-height: 30px;
+    }
+}
+
+.socialMedia {
+    margin: 50px 0px 0px 0px;
+    font-size: 2rem;
+    a {
+        margin-right: 20px;
+        transition: .5s all;
+        &:hover {
+            color: $secondColor;
+        }
+    }
+}
+
+.scott, .title {
+    width: 50%;
+    height: 600px;
+    position: relative;
+    top: 100px;
+}
+
+.solidCircle {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    right: -125px;
+    top: -125px;
+    border: 50px solid rgba($color:$firstColor, $alpha: .6);
+    border-radius: 50%;
+}

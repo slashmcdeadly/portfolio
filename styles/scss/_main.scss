@@ -1,0 +1,370 @@
+.about {
+    min-height: 80vh;
+    background-color: rgba($color:$firstColor, $alpha: .03);
+}
+
+.aboutImg {
+    align-self: center;
+    img {
+        width: 90%;
+        -webkit-box-shadow: 20px 20px 0px 0px rgba($color:$firstColor, $alpha: 1);
+        -moz-box-shadow: 20px 20px 0px 0px rgba($color:$firstColor, $alpha: 1);
+        box-shadow: 20px 20px 0px 0px rgba($color:$firstColor, $alpha: 1);
+    }
+}
+
+.dashed {
+    height: 350px;
+    width: 250px;
+    border: 2px dashed rgba($color:$firstColor, $alpha: .4);
+    position: absolute;
+    left: -80px;
+    top: 130px;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.dashedCircle {
+    height: 250px;
+    width: 250px;
+    border: 2px dashed rgba($color:$firstColor, $alpha: .2);
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.aboutContainer {
+    display: flex;
+    ul {
+        justify-content: start;
+        padding-left: 0px;
+    }
+    .aboutButtons button {
+        width: 100px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        color: $firstColor;
+        margin: 0px 40px 20px 0px;
+        transition: 1s all;
+    }
+    p {
+        color: $secondColor;
+        margin-bottom: 40px;
+        line-height: 30px;
+    }
+    button {
+        margin-bottom: 60px;
+    }
+}
+
+.aboutContainer > div:first-of-type {
+    align-self: center;
+    position: relative;
+    bottom: 30px;
+}
+
+.aboutButtons button:hover {
+    -webkit-box-shadow: 0px 5px 60px 0px rgba($color:$firstColor, $alpha: .27);
+    -moz-box-shadow: 0px 5px 60px 0px rgba($color:$firstColor, $alpha: .27);
+    box-shadow: 0px 5px 60px 0px rgba($color:$firstColor, $alpha: .27);
+}
+
+.aboutContainer > div {
+    width: calc(50% - 20px);
+}
+
+.aboutContainer div:first-of-type {
+    margin-right: 40px;
+} 
+
+.container {
+    width: 100%; 
+    background-color: rgba($color:$firstColor, $alpha: .0); 
+  }
+  
+.skills {
+    text-align: right; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    padding-right: 10px;
+    color: white; 
+}
+
+.html {width: 100%; background-color: $firstColor;} 
+.css {width: 90%; background-color: $firstColor;} 
+.js {width: 85%; background-color: $firstColor;} 
+.react {width: 70%; background-color: $firstColor;} 
+
+.skillsBars {
+    position: relative;
+    bottom: 20px;
+}
+
+.skillsBars p {
+    margin: 0px;
+}
+
+.cv a {
+    color: $backgroundColor;
+    height: 50px;
+    width: 150px;
+}
+
+.cv a:hover {
+    color: $firstColor;
+}
+
+.services {
+    position: relative;
+    .dashedCircle {
+        height: 500px;
+        width: 500px;
+        top: -250px;
+        right: -300px;
+    }
+}
+
+.services > div:last-of-type {
+    display: flex;
+}
+
+.services div div {
+    width: calc(33% - 20px);
+    margin: 50px 0px 100px 0px;
+    padding: 0px 20px 50px 20px;
+    -webkit-box-shadow: 0px 5px 60px 0px rgba($color:$firstColor, $alpha: .27);
+    -moz-box-shadow: 0px 5px 60px 0px rgba($color:$firstColor, $alpha: .27);
+    box-shadow: 0px 5px 60px 0px rgba($color:$firstColor, $alpha: .27);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &:first-of-type {
+        margin-right: 30px;
+    }
+    &:last-of-type {
+        margin-left: 30px;
+    }
+    button {
+        position: absolute;
+        bottom: 20px;
+        margin: 0 auto;
+        align-self: center;
+    }
+}
+
+.services p {
+    margin-bottom: 70px;
+    color: $secondColor;
+    line-height: 30px;
+}
+
+.services h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.topLinks {
+    margin-top: 100px;
+}
+
+.bottomLinks {
+    margin-bottom: 80px;
+}
+
+.topLinks, .bottomLinks {
+    display: flex;
+    height: 300px;
+    img {
+        -webkit-box-shadow: 10px 15px 80px 10px rgba($color:$firstColor, $alpha: .27);
+        -moz-box-shadow: 10px 15px 80px 10px rgba($color:$firstColor, $alpha: .27);
+        box-shadow: 10px 15px 80px 10px rgba($color:$firstColor, $alpha: .27);
+    }
+}
+
+.topLinks div:first-of-type {
+    width: 66.6%;
+}
+
+.topLinks div:last-of-type {
+    width: 33.3%;
+}
+
+.bottomLinks div:first-of-type {
+    width: 33.3%;
+}
+
+.bottomLinks div:last-of-type {
+    width: 66.6%;
+}
+
+.portfolio {
+    position: relative;
+    .dashed {
+        height: 350px;
+        width: 350px;
+        border: 2px dashed rgba($color:$firstColor, $alpha: .9);
+        position: absolute;
+        background-color: $backgroundColor;
+        left: 60px;
+        top: 60px;
+        z-index: -1;
+        border-radius: 10px;
+    }
+    .dashedSmaller {
+        height: 250px;
+        width: 250px;
+        border: 2px dashed rgba($color:$firstColor, $alpha: .4);
+        position: absolute;
+        left: 260px;
+        top: -50px;
+        z-index: -2;
+        border-radius: 10px;
+    }
+}
+
+.portfolio a {
+    transition: .5s all;
+    &:hover {
+        opacity: .4;
+    }
+}
+
+.portfolio a:hover {
+    opacity: .4;
+}
+
+.contact {
+    height: 110vh;
+    position: relative;
+    .dashedCircle {
+        top: -50px;
+        right: -380px;
+    }
+    .dashedInner {
+        height: 150px;
+        width: 150px;
+        border: 2px dashed rgba($color:$firstColor, $alpha: .4);
+        position: absolute;
+        top: 0px;
+        right: -330px;
+        z-index: -1;
+        border-radius: 50%;
+    }
+    .dashedOval {
+        height: 280px;
+        width: 280px;
+        border: 2px dashed rgba($color:$firstColor, $alpha: .4);
+        position: absolute;
+        bottom: 60px;
+        left: -400px;
+        z-index: -1;
+        border-radius: 50%;
+    }
+    .dashedOvalCircle {
+        height: 150px;
+        width: 150px;
+        border: 2px dashed rgba($color:$firstColor, $alpha: .9);
+        position: absolute;
+        background-color: $backgroundColor;
+        bottom: 250px;
+        left: -230px;
+        z-index: 0;
+        border-radius: 50%;
+    }
+    .sectionTitles {
+        margin-bottom: 70px;
+    }
+    form {
+        margin: 0 auto;
+        min-height: 550px;
+        width: 75%;
+        padding: 30px;
+        background-color: $firstColor;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        -webkit-box-shadow: 10px 15px 80px 10px rgba($color:$firstColor, $alpha: .27);
+        -moz-box-shadow: 10px 15px 80px 10px rgba($color:$firstColor, $alpha: .27);
+        box-shadow: 10px 15px 80px 10px rgba($color:$firstColor, $alpha: .27);
+    }
+    .top-form {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    button {
+        margin: 40px 0px 0px 0px;
+    }
+}
+
+input[type=text], input[type=email]{
+    height: 50px;
+    width: calc(50% - 20px);
+    margin-bottom: 40px;
+}
+
+input[type=text], input[type=email], textarea {
+    padding-left: 20px;
+    background-color: $backgroundColor;
+    font-family: $font;
+    border: none;
+}
+
+.bottom-form {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+    padding-top: 20px;
+    resize: none;
+}
+
+.popup {
+    height: 220px;
+    width: 100%;
+    background-color: $backgroundColor;
+    position: absolute;
+    bottom: -2690px;
+    border-top: 4px solid $firstColor;
+    border-bottom: 4px solid $firstColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        color: $firstColor;
+        margin-bottom: 00px;
+    }
+    p {
+        color: $darkColor;
+        width: 67%;
+        line-height: 30px;
+        text-align: center;
+    }
+    a{
+        font-size: 2rem;
+    }
+    button {
+        margin-right: 0px;
+    }
+}
+
+footer {
+    background-color: rgba($color:$firstColor, $alpha: .2);
+    height: 10vh;
+    div {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo p {
+        position: relative;
+        top: 12px;
+    }
+}
