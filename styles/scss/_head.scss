@@ -115,7 +115,7 @@
     z-index: 10;
     position: fixed;
     // left: -30%;
-    height: 100vh;
+    height: 150vh;
     border-right: 5px solid $firstColor;
     nav {
         position: relative;
@@ -135,8 +135,8 @@
     .logoContainer {
         transform: scale(3);
         position: absolute;
-        bottom: 180px;
-        left: 250px;
+        bottom: 280px;
+        left: 60%;
     }
 }
 
@@ -149,5 +149,7 @@
     font-size: 3rem;
     margin: 0px;
 }
+
+
 
 

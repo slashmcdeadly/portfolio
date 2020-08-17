@@ -135,9 +135,9 @@
     width: calc(33% - 20px);
     margin: 50px 0px 100px 0px;
     padding: 0px 20px 50px 20px;
-    -webkit-box-shadow: 0px 5px 60px 0px rgba($color:$firstColor, $alpha: .27);
-    -moz-box-shadow: 0px 5px 60px 0px rgba($color:$firstColor, $alpha: .27);
-    box-shadow: 0px 5px 60px 0px rgba($color:$firstColor, $alpha: .27);
+    -webkit-box-shadow: 0px 5px 15px 0px rgba($color:$firstColor, $alpha: .27);
+    -moz-box-shadow: 0px 5px 15px 0px rgba($color:$firstColor, $alpha: .27);
+    box-shadow: 0px 5px 15px 0px rgba($color:$firstColor, $alpha: .27);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -166,39 +166,104 @@
     font-weight: 400;
 }
 
+.skillz {
+    background-color: rgba($color:$firstColor, $alpha: .4);
+    min-height: 40vh;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 20px;
+        padding-left: 0px;
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 75px;
+            margin: 20px 40px;
+            text-align: center;
+        }
+        i {
+            font-size: 2rem;
+        }
+    }
+}
+
 .topLinks {
     margin-top: 100px;
 }
 
 .bottomLinks {
     margin-bottom: 80px;
+    position: relative;
+    bottom: 4px;
 }
 
 .topLinks, .bottomLinks {
     display: flex;
     min-height: 280px;
-    img {
-        width: 100%;
-        -webkit-box-shadow: 10px 15px 80px 10px rgba($color:$firstColor, $alpha: .27);
-        -moz-box-shadow: 10px 15px 80px 10px rgba($color:$firstColor, $alpha: .27);
-        box-shadow: 10px 15px 80px 10px rgba($color:$firstColor, $alpha: .27);
+    text-align: center;
+    // img {
+    //     width: 100%;
+    // }
+}
+
+.linkz {
+    -webkit-box-shadow: 20px 20px 0px 0px rgba($color:$firstColor, $alpha: 1);
+    -moz-box-shadow: 20px 20px 0px 0px rgba($color:$firstColor, $alpha: 1);
+    box-shadow: 20px 20px 0px 0px rgba($color:$firstColor, $alpha: 1);
+    h4 {
+        text-align: center;
+    }
+    p {
+        font-size: 1.3rem;
     }
 }
 
-.topLinks div:first-of-type {
+.bottomLinks div > a {
+        position: relative;
+        bottom: -8px;
+        right: -2px;
+}
+
+.topLinks div > a {
+        position: relative;
+        bottom: -8px;
+        right: -2px;
+}
+
+.left, .left .modal {
     width: 66.6%;
 }
 
-.topLinks div:last-of-type {
+.right, .right .modal {
+    width: calc(33.3% - 2px);
+}
+
+.bLeft, .modalBL {
     width: 33.3%;
 }
 
-.bottomLinks div:first-of-type {
-    width: 33.3%;
+.bLeft img {
+    height: 304px;
 }
 
-.bottomLinks div:last-of-type {
-    width: 66.6%;
+.modalTR {
+    max-width: 366.3px;
+}
+
+.modalTL {
+    z-index: 10;
+    p, h4 {
+        width: 66.6%;
+    }
+}
+
+.modalBR {
+    width: 100%;
+    p, h4  {
+        width: 66.6%;
+    }
 }
 
 .portfolio {
@@ -226,20 +291,10 @@
     }
 }
 
-.portfolio a {
-    transition: .5s all;
-    &:hover {
-        opacity: .4;
-    }
-}
-
-.portfolio a:hover {
-    opacity: .4;
-}
-
 .contact {
-    height: 110vh;
+    min-height: 110vh;
     position: relative;
+    padding-bottom: 100px;
     .dashedCircle {
         top: -50px;
         right: -380px;
@@ -287,9 +342,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        -webkit-box-shadow: 10px 15px 80px 10px rgba($color:$firstColor, $alpha: .27);
-        -moz-box-shadow: 10px 15px 80px 10px rgba($color:$firstColor, $alpha: .27);
-        box-shadow: 10px 15px 80px 10px rgba($color:$firstColor, $alpha: .27);
+        -webkit-box-shadow: 20px 20px 0px 0px rgba($color:$firstColor, $alpha: .27);
+        -moz-box-shadow: 20px 20px 0px 0px rgba($color:$firstColor, $alpha: .27);
+        box-shadow: 20px 20px 0px 0px rgba($color:$firstColor, $alpha: .27);
     }
     .top-form {
         display: flex;

@@ -47,12 +47,35 @@ portfolio.hamburger = () => {
     })
 }
 
+portfolio.modal = function(){
+    $('.left').hover(() => {
+        { $('.modalTL').toggleClass('hidden');
+        $('.left a').toggleClass('opacity') }
+    })
+
+    $('.right').hover(() => {
+        { $('.modalTR').toggleClass('hidden');
+        $('.right a').toggleClass('opacity') } 
+    })
+
+    $('.bLeft').hover(() => {
+        { $('.modalBL').toggleClass('hidden');
+        $('.bLeft a').toggleClass('opacity') }
+    })
+
+    $('.bRight').hover(() => {
+        { $('.modalBR').toggleClass('hidden');
+        $('.bRight a').toggleClass('opacity') } 
+    })
+}
+
 portfolio.init = () => {
     portfolio.skills();
     portfolio.hireMe();
     portfolio.nav();
     portfolio.close();
     portfolio.hamburger();
+    portfolio.modal();
 }
 
 $(function(){

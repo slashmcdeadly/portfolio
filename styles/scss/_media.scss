@@ -59,6 +59,44 @@
         margin-bottom: 100px;
     }
 
+    .modal {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        p, h4 {
+            width: 100%;
+            margin: 0px;
+        }
+    }
+
+    .modalTR {
+        max-width: 100%;
+    }
+
+    .linkz {
+        box-shadow: none;
+    }
+
+    .bottomLinks img {
+        width: initial;
+    }
+
+    .pContainer {
+        border: 5px solid $firstColor;
+        padding: 30px 10px 50px 10px;
+        box-shadow: 20px 20px 0px 0px rgba(165, 28, 48, 0.27);
+        p {
+            color: $firstColor;
+        }
+        h4 {
+            color: black;
+            margin-bottom: 20px;
+        }
+        a{
+            color: black;
+        }
+    }
+
 }
 
 /* Portrait tablet and small desktops */
@@ -173,6 +211,14 @@
 
     .scott {
         top: 150px;
+    }
+
+    .pContainer {
+        box-shadow: none;
+    }
+
+    .contact form {
+        box-shadow: none;
     }
 
     .dashedCircle {
