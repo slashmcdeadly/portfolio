@@ -117,55 +117,6 @@
     color: $firstColor;
 }
 
-.services {
-    position: relative;
-    .dashedCircle {
-        height: 500px;
-        width: 500px;
-        top: -250px;
-        right: -300px;
-    }
-}
-
-.services > div:last-of-type {
-    display: flex;
-}
-
-.services div div {
-    width: calc(33% - 20px);
-    margin: 50px 0px 100px 0px;
-    padding: 0px 20px 50px 20px;
-    -webkit-box-shadow: 0px 5px 15px 0px rgba($color:$firstColor, $alpha: .27);
-    -moz-box-shadow: 0px 5px 15px 0px rgba($color:$firstColor, $alpha: .27);
-    box-shadow: 0px 5px 15px 0px rgba($color:$firstColor, $alpha: .27);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    &:first-of-type {
-        margin-right: 30px;
-    }
-    &:last-of-type {
-        margin-left: 30px;
-    }
-    button {
-        position: absolute;
-        bottom: 20px;
-        margin: 0 auto;
-        align-self: center;
-    }
-}
-
-.services p {
-    margin-bottom: 70px;
-    color: $secondColor;
-    line-height: 30px;
-}
-
-.services h3 {
-    font-size: 2.5rem;
-    font-weight: 400;
-}
-
 .skillz {
     background-color: rgba($color:$firstColor, $alpha: .4);
     min-height: 40vh;
@@ -232,10 +183,6 @@
         right: -2px;
 }
 
-.left, .left .modal {
-    width: 66.6%;
-}
-
 .right, .right .modal {
     width: calc(33.3% - 2px);
 }
@@ -248,15 +195,16 @@
     height: 304px;
 }
 
-.modalTR {
-    max-width: 366.3px;
-}
-
 .modalTL {
-    z-index: 10;
-    p, h4 {
+    // z-index: 100;
+    width: 66.6%;
+    h4, p {
         width: 66.6%;
     }
+}
+
+.modalTR {
+    max-width: 366.3px;
 }
 
 .modalBR {

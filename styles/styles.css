@@ -682,67 +682,6 @@ ul {
   color: #A51C30;
 }
 
-.services {
-  position: relative;
-}
-
-.services .dashedCircle {
-  height: 500px;
-  width: 500px;
-  top: -250px;
-  right: -300px;
-}
-
-.services > div:last-of-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.services div div {
-  width: calc(33% - 20px);
-  margin: 50px 0px 100px 0px;
-  padding: 0px 20px 50px 20px;
-  -webkit-box-shadow: 0px 5px 15px 0px rgba(165, 28, 48, 0.27);
-  box-shadow: 0px 5px 15px 0px rgba(165, 28, 48, 0.27);
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.services div div:first-of-type {
-  margin-right: 30px;
-}
-
-.services div div:last-of-type {
-  margin-left: 30px;
-}
-
-.services div div button {
-  position: absolute;
-  bottom: 20px;
-  margin: 0 auto;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.services p {
-  margin-bottom: 70px;
-  color: #7E7E7E;
-  line-height: 30px;
-}
-
-.services h3 {
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-
 .skillz {
   background-color: rgba(165, 28, 48, 0.4);
   min-height: 40vh;
@@ -824,10 +763,6 @@ ul {
   right: -2px;
 }
 
-.left, .left .modal {
-  width: 66.6%;
-}
-
 .right, .right .modal {
   width: calc(33.3% - 2px);
 }
@@ -840,16 +775,16 @@ ul {
   height: 304px;
 }
 
+.modalTL {
+  width: 66.6%;
+}
+
+.modalTL h4, .modalTL p {
+  width: 66.6%;
+}
+
 .modalTR {
   max-width: 366.3px;
-}
-
-.modalTL {
-  z-index: 10;
-}
-
-.modalTL p, .modalTL h4 {
-  width: 66.6%;
 }
 
 .modalBR {
